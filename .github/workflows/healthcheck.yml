@@ -1,15 +1,14 @@
-
 name: Healthcheck
 
-# on:
-#  schedule:
-#    - cron: '*/15 * * * *'
+on:
+  schedule:
+    - cron: '*/15 * * * *'
 
 jobs:
   healthcheck:
     runs-on: ubuntu-18.04
     steps:
-      - name: Check that toskaboiler is alive
+      - name: Check that pokedex is alive
         uses: jtalk/url-health-check-action@v1.4
         with:
           url: https://fs-toskaboiler.herokuapp.com/
