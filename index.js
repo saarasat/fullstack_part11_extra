@@ -59,6 +59,7 @@ if (!inProduction) {
 }
 
 app.listen(PORT, () => {
+  // eslint-disable-next-line no-console
   console.log(`Started on port ${PORT}`)
 })
 
