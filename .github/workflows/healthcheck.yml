@@ -1,5 +1,11 @@
 name: Healthcheck
 
+on:
+  push:
+    branches:
+      - test
+
+# Normally this would be on
 # on:
 #   schedule:
 #     - cron: '*/15 * * * *'
