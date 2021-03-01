@@ -39,6 +39,7 @@ jobs:
           heroku_app_name: "fs-toskaboiler"
           heroku_email: "${{secrets.EMAIL}}"
           healthcheck: "https://fs-toskaboiler.herokuapp.com/ping"
+          checkstring: "pong"
           rollbackonhealthcheckfailed: true
       #- name: slack notification
       #  uses: 8398a7/action-slack@v3
