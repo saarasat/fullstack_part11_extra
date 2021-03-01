@@ -61,3 +61,7 @@ if (!inProduction) {
 app.listen(PORT, () => {
   console.log(`Started on port ${PORT}`)
 })
+
+app.get('/ping', (req, res) => {
+  res.send('pong')
+})
